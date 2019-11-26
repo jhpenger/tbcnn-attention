@@ -1,7 +1,8 @@
 FROM yijun/fast:base
 RUN apk update
 RUN apk upgrade
-RUN apk add --update go gcc g++ libfreetype6-dev pkg-config
+RUN apk add libfreetype6-dev pkg-config
+RUN apk add --update go gcc g++ 
 WORKDIR /usr/bin
 ENV GOPATH /usr/bin
 ENV CGO_ENABLED=1
