@@ -25,5 +25,5 @@ ENV GITPOD_UID_GID 33333
 ENV SHELL /bin/bash
 ENV USE_LOCAL_GIT trueWORKDIR $HOME
 USER root
-RUN apt-get install libfreetype6-dev
+RUN apt-get install libfreetype6-dev, pkg-config
 USER gitpod
