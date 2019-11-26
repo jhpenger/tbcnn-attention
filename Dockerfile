@@ -1,7 +1,7 @@
 FROM yijun/fast:base
 RUN apk update
 RUN apk upgrade
-RUN apk add python3.7
+RUN apk add --update python3.7
 RUN apk add --update go gcc g++ 
 WORKDIR /usr/bin
 ENV GOPATH /usr/bin
