@@ -1,7 +1,7 @@
 FROM yijun/fast:base
 RUN apk update
 RUN apk upgrade
-RUN apk add --update go gcc g++
+RUN apk add --update go gcc g++ libfreetype6-dev pkg-config
 WORKDIR /usr/bin
 ENV GOPATH /usr/bin
 ENV CGO_ENABLED=1
@@ -24,6 +24,4 @@ ENV GITPOD_HOME /home/gitpod
 ENV GITPOD_UID_GID 33333
 ENV SHELL /bin/bash
 ENV USE_LOCAL_GIT trueWORKDIR $HOME
-USER root
-RUN apt-get install libfreetype6-dev, pkg-config
 USER gitpod
