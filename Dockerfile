@@ -1,7 +1,7 @@
 FROM yijun/fast:base
 RUN apk update
 RUN apk upgrade
-RUN apk add libfreetype6-dev pkg-config
+RUN apk add python3.5
 RUN apk add --update go gcc g++ 
 WORKDIR /usr/bin
 ENV GOPATH /usr/bin
