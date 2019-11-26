@@ -19,7 +19,6 @@ RUN pip3 install ggnn
 RUN pip3 uninstall -y flatast
 RUN pip3 install flatast
 RUN pip3 install numpy
-RUN pip3 install tensorflow-cpu==1.12.0
 ENV HOME=/home/gitpod
 ENV GITPOD_HOME /home/gitpod
 ENV GITPOD_UID_GID 33333
